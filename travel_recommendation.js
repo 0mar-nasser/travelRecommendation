@@ -25,7 +25,6 @@ searchForm.addEventListener("submit", function (event) {
             </div>
             `;
         });
-        searchInput.value = "";
     }
     else if (keyword === 'country' || keyword === 'countries') {
         data.countries.forEach(function (country) {
@@ -39,7 +38,6 @@ searchForm.addEventListener("submit", function (event) {
                 `;
             })
         });
-        searchInput.value = "";
     }
     else if (keyword === 'temple' || keyword === 'temples') {
         data.temples.forEach(function (temple) {
@@ -51,7 +49,6 @@ searchForm.addEventListener("submit", function (event) {
             </div>
             `;
         });
-        searchInput.value = "";
     }
     else {
         console.log("No match found")
